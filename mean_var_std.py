@@ -2,7 +2,7 @@ import numpy as np
 
 def calculate(list):
     if len(list) != 9:
-        calculations="List must contain nine numbers."
+        raise ValueError("List must contain nine numbers.")
     else:
         list=np.array(list)
         g=list.reshape(3,3)
